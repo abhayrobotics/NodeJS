@@ -8,12 +8,12 @@ var notes = require("./021notes.js")
 var _= require('lodash')
 
 //! learning FS and OS
-// let user = os.userInfo()
-// console.log(user)
+let user = os.userInfo()
+console.log(user)
 
-// fs.appendFile("greetings.txt","Hi "+user.username+" ! \n",()=>{
-//     console.log("file append complete")
-// });
+fs.appendFile("greetings.txt","Hi "+user.username+" ! \n",()=>{
+    console.log("file append complete")
+});
 
 // ! loading variable and function from other files
 console.log(notes.age)
