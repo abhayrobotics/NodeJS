@@ -27,6 +27,10 @@ app.get('/dosa', function(req,res){
     res.send(dosa_variety);
 })
 
+app.post('/items',(req,res)=>{
+    res.send("Data Received")
+})
+
 app.listen(3000,()=>{
     console.log("server is running")
 });

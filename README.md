@@ -12,7 +12,10 @@
     > npm i express
 
 -   Read MongoDb Installation.docx
-
+-   To run MongoDB Server 
+    > mongod
+    to use monggo shell
+    
 ## Topics
 - 01function.js
     -   Writing function 4 ways
@@ -29,3 +32,6 @@
 -   04server.js
     - express install
     - basic server running
+    -  post request using postman
+    -  mongoose better than mongoDB driver for translating between node js and mongoDB
+    
