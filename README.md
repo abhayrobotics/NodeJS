@@ -15,6 +15,9 @@
 -   To run MongoDB Server 
     > mongod
     to use monggo shell
+
+- to install mongoose
+    > npm i mongoose
     
 ## Topics
 - 01function.js
@@ -34,4 +37,7 @@
     - basic server running
     -  post request using postman
     -  mongoose better than mongoDB driver for translating between node js and mongoDB
+
+- 05db.js
+    - install mongoose
     
