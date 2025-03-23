@@ -4,7 +4,7 @@ var express = require('express')
 
 let app = express();
 
-
+let db = require("./05db")
 
 app.get('/', function(req,res){
 
@@ -32,5 +32,5 @@ app.post('/items',(req,res)=>{
 })
 
 app.listen(3000,()=>{
-    console.log("server is running at 3000")
+    console.log("Express JS server is running at 3000")
 });
