@@ -10,8 +10,10 @@ mongoose.connect(mongoUrl,{
     useUnifiedTopology:true
 })
 
+// maintain connection
 const db =mongoose.connection;
 
+// Event Listener
 db.on('connected',()=>{
     console.log("Connected to MOngoDb Server")
 
@@ -25,4 +27,5 @@ db.on('error',(e)=>{
 
 })
 
+// export the database
 module.exports ='db';

@@ -19,6 +19,8 @@
 - to install mongoose
     > npm i mongoose
     
+- install body-parser
+    > npm i body-parser
 ## Topics
 - 01function.js
     -   Writing function 4 ways
@@ -40,4 +42,7 @@
 
 - 05db.js
     - install mongoose
+    -  setup connection and export for using in other file
+    - creating a post method in 04server.js for sending the data usinga async await
+
     
