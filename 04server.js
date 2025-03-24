@@ -15,6 +15,8 @@ app.get('/', function(req,res){
     res.send("Welcome to server home");
 })
 
+// post method to save data in DB
+
 app.post('/person', async (req,res)=>{
 
     // Save the new person into the database
@@ -34,7 +36,7 @@ catch(error){
 
 }
 
-app.get('/person', async (req,res)=>{
+app.get('/person', async  (req,res)=>{
     try{
 
         const data =await Person.find();
