@@ -43,6 +43,17 @@
 - 05db.js
     - install mongoose
     -  setup connection and export for using in other file
-    - creating a post method in 04server.js for sending the data usinga async await
-
-    
+    - creating a post method in 04server.js for sending the data using a async await
+    - using postman to send data using "post" method  on  http://localhost:3000/person
+      ````    javascript
+        {
+            "name":"Allice",
+            "age":34,
+            "mobile":"54545",
+            "work":"Manager",
+            "address":"sdsd",
+            "email":"11@gmail.com",
+            "salary":100000
+        }
+        ````
+    - using postman to fetch  data using "get" method on  http://localhost:3000/person by using Person.find()
