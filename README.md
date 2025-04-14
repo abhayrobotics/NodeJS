@@ -34,15 +34,17 @@
     -   JSON.strigify
     -   JSON.parse
 
+- 05db.js
+    - install mongoose
+    -  setup connection and export for using in other file
+
+
 -   04server.js
     - express install
     - basic server running
     -  post request using postman
     -  mongoose better than mongoDB driver for translating between node js and mongoDB
 
-- 05db.js
-    - install mongoose
-    -  setup connection and export for using in other file
     - creating a post method in 04server.js for sending the data using a async await
     - using postman to send data using "post" method  on  http://localhost:3000/person
       ````    javascript
@@ -56,4 +58,22 @@
             "salary":100000
         }
         ````
-    - using postman to fetch  data using "get" method on  http://localhost:3000/person by using Person.find()
+    - created a schema or model for mennu item to be stored.
+    - using postman to fetch  data using "get" method on  http://localhost:3000/menu by using MenuItem.find()
+    -- using postman to send data using "post" method  on  http://localhost:3000/menu
+      ````    javascript
+        {
+        "name":"Chicken Tandoori",
+        "price":3400,
+        "is_drink":false,
+        "taste":"spicy"
+        }
+
+    -- parameter based url,  "/person/:workType1"
+    ````    javascript
+        app.get("/person/:workType1", async (req,res)=>{
+        const workType = req.params.workType1;
+        //some code
+        })
+    ````
+        
