@@ -56,6 +56,7 @@ router.get("/:workType1", async (req, res) => {
 
 
 // update we need id of element to be updated and what data to be updated
+// put and patch both syntax is same
 router.put('/:id1',async (req,res)=>{
   try{
     //1. we need ID
@@ -79,6 +80,27 @@ router.put('/:id1',async (req,res)=>{
     console.log({ eror: error });
     res.status(500).json({ error: "Internal Server Error" });
   }
+})
+
+
+// delete
+router.delete('/:id',async (req,res)=>{
+
+  try{
+
+    const personId = req.params.id;
+    const response = await Person.findByIdAndDelete(personId);
+    if(!response){
+      console.log("No Such item found")
+    }
+    console.log("item deleted")
+    rs.status(200).json({message:"Person deleted successfully"})
+  }
+  catch(e){
+    console.log({ eror: error });
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+
 })
 
 module.exports = router;
