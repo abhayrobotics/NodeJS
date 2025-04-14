@@ -30,8 +30,8 @@ router.get('/', async (req,res)=>{
         console.log("Menu data fetched");
         res.status(200).json(data)
     }
-    catch(e){
-        console.log({ eror: error });
+    catch(error){
+        console.log({ error: error });
         res.status(500).json({ error: "Internal Server Error" });
     }
 })
