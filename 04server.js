@@ -3,7 +3,9 @@
 var express = require("express");
 
 let app = express();
+require("dotenv").config()
 
+const PORT = process.env.PORT || 3000;
 const db = require("./05db");
 const Person = require("./models/Person");
 const MenuItem = require("./models/MenuItem");
@@ -24,6 +26,7 @@ const menuItemRoutes = require ('./routes/menuItemRoutes');
 app.use("/person",personRoutes);
 app.use('/menu',menuItemRoutes);
 
-app.listen(3000, () => {
+
+app.listen(PORT, () => {
   console.log("Express JS server is running at 3000");
 });
