@@ -94,10 +94,10 @@ router.delete('/:id',async (req,res)=>{
       console.log("No Such item found")
     }
     console.log("item deleted")
-    rs.status(200).json({message:"Person deleted successfully"})
+    res.status(200).json({message:"Person deleted successfully"})
   }
-  catch(e){
-    console.log({ eror: error });
+  catch(error){
+    console.log({ error: error });
     res.status(500).json({ error: "Internal Server Error" });
   }
 
