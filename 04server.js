@@ -6,6 +6,7 @@ let app = express();
 
 const db = require("./05db")
 const Person = require("./models/Person")
+const MenuItem = require("./models/MenuItem")
 
 const bodyParser =require("body-parser")
 app.use(bodyParser.json())
@@ -35,7 +36,9 @@ catch(error){
     res.status(500).json({error:"Internal Server Error"})
 
 }
+})
 
+// get method to fetch data from DB
 app.get('/person', async  (req,res)=>{
     try{
 
@@ -47,11 +50,11 @@ app.get('/person', async  (req,res)=>{
         console.log({"eror":error})
         res.status(500).json({error:"Internal Server Error"})
     }
-
-
-})
+    console.log(res)
 
 })
+
+
 
 
 app.get('/chicken', function(req,res){
