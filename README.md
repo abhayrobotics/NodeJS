@@ -79,5 +79,6 @@
 
     - create route folder and as personroute.js and amenuItemRoute.js for clearing the server.js file 
 
-    - update and delete method 
+    - update and delete method
+    - 
         
