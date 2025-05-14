@@ -21,6 +21,9 @@
     
 - install body-parser
     > npm i body-parser
+
+- installing passport and passport-local for authentication
+    > npm i passport passport-local
 ## Topics
 - 01function.js
     -   Writing function 4 ways
@@ -81,3 +84,16 @@
 
     - update and delete method 
         
+    - learning Middleware use logrequest as middleware function.
+    ```` js
+        const logRequest = (req,res,next)=>{
+        console.log(`[${new Date().toLocaleString()}] Request made : ${req.originalUrl} `);
+        // always call next or execute any additional middleware and then next() for getting the respose from sever in next phase
+        next();
+
+        }
+        // using middleware - method -1
+        app.use(logRequest);
+    ````
+
+    - installing passport and passport-local for authentication
