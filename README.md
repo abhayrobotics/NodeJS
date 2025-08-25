@@ -82,7 +82,6 @@
 
     - create route folder and as personroute.js and amenuItemRoute.js for clearing the server.js file 
 
-<<<<<<< HEAD
     - update and delete method 
         
     - learning Middleware use logrequest as middleware function.
@@ -102,4 +101,4 @@
     - update and delete method
     - 
         
->>>>>>> b3262024c533b0e470b3625bc9ea8d168e8b6341
+
