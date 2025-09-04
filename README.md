@@ -97,7 +97,7 @@
     ````
 
     - installing passport and passport-local for authentication
-=======
+
     - update and delete method
     - 
         
